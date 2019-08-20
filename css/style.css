@@ -1,0 +1,16 @@
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #AAA;
+}
+
+/*Nav Dropdown*/
+
+/*nav .navbar-nav > li.dropdown:hover > a,*/
+/*nav .navbar-nav > li.dropdown:hover > a:hover,*/
+/*nav .navbar-nav > li.dropdown:hover > a:focus {*/
+    /*background-color: rgb(231, 231, 231);*/
+    /*color: rgb(85, 85, 85);*/
+/*}*/
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
