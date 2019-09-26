@@ -1,3 +1,4 @@
+// The original author of this code is Brad Traversy (https://github.com/bradtraversy)
 class TypeWriter {
    constructor(txtElement, words, wait = 3000) {
       this.txtElement = txtElement;
