@@ -35,7 +35,7 @@ class TypeWriter {
          typeSpeed /= 2;
       }
       // Get width of device
-      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
       // If word is complete
       if(!this.isDeleting && this.txt === fullTxt) {
@@ -58,8 +58,6 @@ class TypeWriter {
       setTimeout(() => this.type(), typeSpeed);
    }
 }
-
-var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 document.addEventListener('DOMContentLoaded', init);
 
