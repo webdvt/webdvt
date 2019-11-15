@@ -34,6 +34,8 @@ class TypeWriter {
       if(this.isDeleting) {
          typeSpeed /= 2;
       }
+      // Get width of device
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
       // If word is complete
       if(!this.isDeleting && this.txt === fullTxt) {
@@ -41,6 +43,10 @@ class TypeWriter {
          typeSpeed = this.wait;
          // Set delete to true
          this.isDeleting = true;
+         // Disable on mobile screen
+         if(width < 500) {
+            return;
+         }
       } else if(this.isDeleting && this.txt === '') {
          this.isDeleting = false;
          // Move to next word
@@ -53,9 +59,11 @@ class TypeWriter {
    }
 }
 
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-// Init On DOM Load
 document.addEventListener('DOMContentLoaded', init);
+   // document.querySelector('.txt-type').innerHTML = 'Developer';
+// Init On DOM Load
 
 // Init App
 function init() {
