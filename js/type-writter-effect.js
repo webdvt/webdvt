@@ -62,8 +62,6 @@ class TypeWriter {
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 document.addEventListener('DOMContentLoaded', init);
-   // document.querySelector('.txt-type').innerHTML = 'Developer';
-// Init On DOM Load
 
 // Init App
 function init() {
