@@ -193,7 +193,7 @@ header.masthead {
   position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
-  background-color: #222;
+  background-color: #777;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -267,7 +267,7 @@ header.masthead:before {
    right: 0;
    bottom: 0;
    left: 0;
-   background: rgba(0, 0, 0, 0.80);
+   background: rgba(0, 0, 0, 0.65);
 }
 
 header.video {
